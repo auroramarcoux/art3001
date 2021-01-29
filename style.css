@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(217, 197, 178);
+    color: white;
+}
+a{
+    color: rgb(162, 103, 105);
+}
+p{
+    text-align: center;
+}
+footer{
+    color: rgb(24, 54, 66);
+    position: fixed;
+    bottom: 0;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+.text-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+    font-family:monospace;
+	font-size: 50px;
+	font-weight: 900;
+	background-color: rgb(134, 97, 92);
+	color: #fff;
+	display: block;
+	padding: .5em;
+}
+
+nav li{
+    display: inline-block;
+}
+
+li{
+    display: list-item;
+}
+
+ul, menu, dir{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 40px;
+}
+
+nav{
+    text-align: center;
+}
+
+.tabs{
+    font-size: 30px;
+    margin-right: 65px;
+    margin-left: 35px;
+}
+
+
+  
+
+
