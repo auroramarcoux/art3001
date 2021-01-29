@@ -1,0 +1,50 @@
+p{
+    display: inline-block;
+}
+.unique-class {
+    font-size: 18pt;
+    text-shadow: 2px 2px rgb(92, 2, 92);
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.red-text{
+    color: red;
+}
+
+.heading {
+    font-style: italic;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    color: tan;
+    text-decoration: overline;
+}
+
+
+  .text-gradient{
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(255, 0, 98), orange, yellow, rgb(0, 250, 0), blue, purple);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cursive{
+    font-size: 25px;
+    color: #fcedd8;
+    font-family: 'Niconne', cursive;
+    text-shadow: 1px 1px 0px #eb452b, 
+            2px 2px 0px #efa032, 
+            3px 3px 0px #46b59b, 
+            4px 4px 0px #017e7f, 
+            5px 5px 0px #052939, 
+            6px 6px 0px #c11a2b, 
+            7px 7px 0px #c11a2b, 
+            8px 8px 0px #c11a2b, 
+            9px 9px 0px #c11a2b;
+}
+
+
+
+
+
