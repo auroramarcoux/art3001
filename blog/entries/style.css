@@ -31,3 +31,12 @@ h2 {
 .grid {
     grid-column: 2/5;
 }
+
+.heading {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    color: white;
+    text-decoration: overline;
+}
