@@ -1,0 +1,113 @@
+body {
+    background: #faf3dd;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.nav-top {
+    background: #faf3dd;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 40px 10px 1fr 1fr;
+}
+
+.top-bar {
+    background: #ecb8a5;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 25% 5% 40% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.title-name {
+    background: #ecb8a5;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.title-name > h3 {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home {
+    background: seagreen;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.contact {
+    background: coral;
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.documents {
+    background: pink;
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+
+.other {
+    background: yellow;
+    grid-column: 7/8;
+    grid-row: 1/2;
+}
+
+.prof-pic {
+    background: #faf3dd;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.prof-pic > img {
+    object-fit: cover;
+    width: 90%;
+    max-height: 90%;
+}
+
+.bio {
+    background: rgb(54, 255, 47);
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.followers {
+    background: #29ABE2;
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.nav-bottom {
+    background: #839788;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 40px 1fr;
+}
+
+.previous {
+    background: magenta;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.tabs {
+    background:rgb(255, 0, 106);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.feed {
+    background: #839788;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
