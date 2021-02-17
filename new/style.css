@@ -38,27 +38,51 @@ body {
 }
 
 .home {
-    background: seagreen;
+    background: #faf3dd;
     grid-column: 4/5;
     grid-row: 1/2;
 }
 
+.home > img {
+    object-fit: cover;
+    width: 80%;
+    max-height: 100%;
+}
+
 .contact {
-    background: coral;
+    background: #faf3dd;
     grid-column: 5/6;
     grid-row: 1/2;
 }
 
+.contact > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
 .documents {
-    background: pink;
+    background: #faf3dd;
     grid-column: 6/7;
     grid-row: 1/2;
 }
 
+.documents > img {
+    object-fit: cover;
+    width: 60%;
+    max-height: 100%;
+}
+
 .other {
-    background: yellow;
+    background: #faf3dd;
     grid-column: 7/8;
     grid-row: 1/2;
+}
+
+.other > img {
+    object-fit: cover;
+    width: 80%;
+    max-height: 100%;
 }
 
 .prof-pic {
@@ -74,15 +98,48 @@ body {
 }
 
 .bio {
-    background: rgb(54, 255, 47);
+    background: #faf3dd;
     grid-column: 2/4;
     grid-row: 4/5;
 }
 
 .followers {
-    background: #29ABE2;
+    background: #faf3dd;
     grid-column: 3/5;
     grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 25% 12.5% 25% 12.5% 25%;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.projects {
+    background-color: #ddd7c3;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.projects > p {
+    text-align: center;
+}
+
+.blogs {
+    background-color: #ddd7c3;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.blogs > p {
+    text-align: center;
+}
+
+.exercises {
+    background-color: #ddd7c3;
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.exercises > p {
+    text-align: center;
 }
 
 .nav-bottom {
@@ -94,20 +151,30 @@ body {
 }
 
 .previous {
-    background: magenta;
+    background: #839788;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
+.previous > p {
+    text-align: center;
+}
+
 .tabs {
-    background:rgb(255, 0, 106);
+    background: #839788;
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.tabs > p {
+    text-align: center;
+    text-decoration: underline;
 }
 
 .feed {
     background: #839788;
     grid-column: 1/2;
     grid-row: 3/4;
+    display: grid;
 }
 
