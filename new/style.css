@@ -295,5 +295,144 @@ div.gallery img {
     clear: both;
   }
 
+  .home{
+    display: grid;
+    background: #2b061e;
+    height: 100vw;
+    grid-template-rows: 8% 8% 84%;
+    box-sizing: border-box;
+  }
+
+  .weekly-head {
+    grid-row: 1/2;
+  }
+
+  .weekly-head p {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 45px;
+    color: ivory;
+}
+
+  .week-tabs {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  }
+
+  .blog-ent {
+    grid-column: 2/3;
+  }
+
+  .blog-ent p {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 38px;
+    color: ivory;
+}
+
+  .cool-sites {
+    grid-column: 4/5;
+  }
+
+  .cool-sites p {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 38px;
+    color: ivory;
+}
+
+  .list {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  }
+
+  .blog-list {
+      grid-column: 2/3;
+  }
+
+  .entry {
+    margin-top: 30px;
+    height: 70px;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 30px;
+  }
+
+  .quote-wrapper {
+      grid-row: 1/3;
+      grid-column: 1/2;
+      height: 70px;
+      position: relative;
+      width: 70px;
+  }
+
+  .text {
+      background: radial-gradient(
+        ellipse at center,
+        #ecb8a5 0%,
+        #ecb8a5 70%,
+        rgba(0, 128, 172, 0) 70.3%
+      );
+      height: 100%;
+      width: 100%;
+      color: white;
+      position: relative;
+      margin: 0;
+  }
+
+  .text p {
+      font-size: 50px;
+      height: 100%;
+      line-height: 1.25;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+
+  .text::before {
+    content: "";
+    float: inline-start;
+    height: 100%;
+    width: 50%;
+  }
+
+  .blog-name {
+      grid-row: 1/2;
+  }
+  .blog-name p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 35px;
+    color: ivory;
+}
+
+  .blog-desc {
+      grid-row: 2/3;
+  }
+
+  .blog-desc p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 18px;
+    color: ivory;
+}
+
+ 
+
 
 
