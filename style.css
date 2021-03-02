@@ -375,7 +375,7 @@ div.gallery img {
     grid-column: 2/3;
   }
 
-  .blog-ent p {
+  .blog-ent > a > p {
     text-align: center;
     text-decoration: underline;
     margin-top: 25px;
@@ -389,7 +389,7 @@ div.gallery img {
     grid-column: 4/5;
   }
 
-  .cool-sites p {
+  .cool-sites > a > p {
     text-align: center;
     text-decoration: underline;
     margin-top: 25px;
