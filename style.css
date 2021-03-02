@@ -38,7 +38,7 @@ body {
     align-items: center;
 }
 
-.title-name > h3 {
+.title-name > a > p {
     object-fit: cover;
     width: 100px;
     max-height: 100%;
@@ -47,6 +47,15 @@ body {
     box-sizing: border-box;
     font-family: 'Satisfy', sans-serif;
     font-weight: lighter;
+}
+
+.title-name > a {
+    text-decoration: none;
+}
+
+.title-name > a:active {
+    background: none;
+    text-decoration: none;
 }
 
 .nav-buttons {
