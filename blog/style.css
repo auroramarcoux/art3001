@@ -40,3 +40,9 @@ h2 {
     color: white;
     text-decoration: overline;
 }
+
+.videos {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
