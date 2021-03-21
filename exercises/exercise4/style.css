@@ -1,0 +1,57 @@
+body {
+    background: #5e6472;
+    margin: 0%;
+}
+
+.wims-top {
+    display: grid;
+    width: 100%;
+    margin: 0%;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.buttons-left {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.title {
+    grid-column: 2/3;
+    text-align: center;
+    padding: 50% 0;
+}
+
+.title > h1 {
+    font-size: 60px;
+    color: #faf3dd;
+}
+
+.title > p {
+    font-size: 25px;
+    color: #ffa69e;
+}
+
+
+.buttons-right {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.button {
+    border: none;
+    background: #aed9e0;
+    color: #846267;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
