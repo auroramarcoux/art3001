@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Barlow&family=Quantico&display=swap" rel="stylesheet">
+    <script src="p5.js"></script>
 </head>
 <body>
+    <div id="top"></div>
     <div class="wims-top">
         <div class="buttons-left">
             <a class="button button1" href="#wims-top">HOME</a> 
@@ -29,7 +31,7 @@
             <a class="button button3" href="#meetings">MEETINGS</a>
         </div>
     </div>
-
+    <a class="back-to-top" href="#top">back <br> to <br> top</a>
     <div class="about" id="about">
         <div class="heading">
             <h1>ABOUT US...</h1>
@@ -48,11 +50,43 @@
                 Established in 2006, the Women in Math and Science Club at The Ohio State University was created to unite women with similar interests, promote academic success and well-being, and establish a supportive personal and professional network.  This organization provides support for undergraduate women in mathematics and the sciences by inviting successful women in STEM to speak, holding social events, and providing outreach to encourage young girls to study science and to demonstrate that there is not a standard type of person who can do science.
             </p>
         </div>
-        <div class="bottom-buttons"></div>
+        <div class="bottom-buttons">
+            <a class="oval" href="">
+                <p>career building</p>
+            </a>
+            <a class="oval" href="">
+                <p style="line-height: 20px; margin-top: 10px;">community outreach</p>
+            </a>
+            <a class="oval" href="">
+                <p>peer mentoring</p>
+            </a>
+        </div>
     </div>
 
     <div class="contact" id="contact">
-
+        <div class="heading">
+            <h1>CONTACT US...</h1>
+        </div>
+        <div class="form-page">
+            <form action="action_page.php" method="get">
+                <div class="first">
+                    <input type="text" id="fname" name="fname" placeholder="FIRST NAME">
+                </div>
+                <div class="last">
+                    <input type="text" id="lname" name="lname" placeholder="LAST NAME">
+                </div>
+                <div class="email">
+                    <input type="text" id="email" name="email" placeholder="EMAIL">
+                </div>
+                <div class="phone">
+                    <input type="text" id="phone" name="phone" placeholder="PHONE">
+                </div>
+                <div class="message">
+                    <input type="text" id="message" name="message" placeholder="MESSAGE">
+                </div>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
     </div>
 
     <div class="exec" id="exec">
