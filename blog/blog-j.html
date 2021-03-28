@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog J</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(217, 197, 178); color: rgb(32, 1, 22);">
+    <h1>my masterpieces!</h1>
+    <h3>March 28th, 2021</h3>
+    <p style="margin-left: 25px; margin-right: 25px; text-align: center;">
+        Per Dalena’s request, I’m here to show off some of the tiktok recipe’s I’ve made! The presentations may not look the best, but boy did they taste delicious.
+    </p>
+
+    <h2 style="text-align:center">TikTok Creations</h2>
+
+    <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="../assets/peppers.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="../assets/sushi.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="../assets/santefe.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="../assets/turkey.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="../assets/fetapasta.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="../assets/ramen.jpg" style="width:100%">
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>    
+
+        <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="../assets/peppers.jpg" style="width:100%" onclick="currentSlide(1)" alt="peppers">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/sushi.jpg" style="width:100%" onclick="currentSlide(2)" alt="sushi">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/santefe.jpg" style="width:100%" onclick="currentSlide(3)" alt="sante fe rolls">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/turkey.jpg" style="width:100%" onclick="currentSlide(4)" alt="turkey stuffed peppers">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/fetapasta.jpg" style="width:100%" onclick="currentSlide(5)" alt="feta">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../assets/ramen.jpg" style="width:100%" onclick="currentSlide(6)" alt="ramen">
+              </div>
+        </div>
+    </div>
+
+    <p style="margin-left: 25px; margin-right: 25px; text-align: center;">
+        Now looking back at the snapchat pictures I’ve took of my tiktok meals, I realized the quality looks like Instagram from 2012. To make this post better, here are some recipes I made over the beginning of quarantine last year! Enjoy :)
+    </p>
+    
+    <div class="pics">
+        <img src="../assets/sp-avo.jpg" alt="avocado on sweet potato">
+        <img src="../assets/bagel-sam.jpg" alt="bagel sandwich">
+        <img src="../assets/burrito-bowl.jpg" alt="burrito bowl">
+        <img src="../assets/idk-bowl.jpg" alt="kale salad bowl">
+        <img src="../assets/pb-waff.jpg" alt="peanut butter waffles">
+    </div>
+    <div class="pics">
+        <img src="../assets/pbbagel.jpg" alt="peanut butter bagel">
+        <img src="../assets/salad.jpg" alt="simple salad">
+        <img src="../assets/sfw.jpg" alt="spinach feta wrap">
+        <img src="../assets/sm-bowl.jpg" alt="smoothie bowl">
+        <img src="../assets/spring-roll.jpg" alt="spring rolls">
+    </div>
+
+    <h3>Weekly quote: </h3>
+    <p class="heading">“Nothing brings people together like good food.” </p>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
