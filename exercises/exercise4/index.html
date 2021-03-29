@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Barlow&family=Quantico&display=swap" rel="stylesheet">
-    <script src="p5.js"></script>
 </head>
 <body>
     <div id="top"></div>
@@ -90,15 +89,198 @@
     </div>
 
     <div class="exec" id="exec">
-
+        <div class="heading">
+            <h1>EXECUTIVE BOARD...</h1>
+        </div>
+        <div class="hex">
+            <div class="pres-em">
+                <p>president emeritus</p>
+            </div>
+            <div class="publicist">
+                <p>publicist</p>
+            </div>
+            <div class="vice">
+                <p>vice president</p>
+            </div>
+            <div class="liasion">
+                <p>community outreach liasion</p>
+            </div>
+            <div class="sec">
+                <p>secretary</p>
+            </div>
+            <div class="treas">
+                <p>treasurer</p>
+            </div>
+            <div class="president">
+                <p>president</p>
+            </div>
+        </div>
     </div>
 
     <div class="outreach" id="outreach">
-
+        <div class="heading">
+            <h1>COMMUNITY OUTREACH...</h1>
+        </div>
+        <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="../../assets/wims-1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="../../assets/wims-2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="../../assets/wims-3.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="../../assets/wims-4.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="../../assets/wims-5.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="../../assets/wims-6.jpg" style="width:100%">
+              </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>    
+    
+            <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="../../assets/wims-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="girl scouts">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../../assets/wims-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="caution tape">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../../assets/wims-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="girl scouts">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../../assets/wims-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="girl scouts">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../../assets/wims-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="girl scouts">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../../assets/wims-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="girl scouts">
+                  </div>
+            </div>
+        </div>
+        <div class="out-desc">
+            <p>
+                WIMS is proud to partner with the Girl Scouts of Ohio’s Heartland to put on an annual event to help spark an interest at a young age in STEM subjects in our future physicians, engineers, scientists, and mathematicians. “Detective for a Day” puts the girls’ problem-solving skills to the test as they attempt to solve a mystery using math, science, and technology.
+            </p>
+            <p>
+                This event is hosted every Spring at The Ohio State University’s Ohio Union. More information, including details on registration, can be found on the GSOH website.
+            </p>
+            <p>
+                In addition to our "Detective for a Day" event, WIMS offers smaller-scale outreach programs that introduce STEM topics in a fun, interactive manner at Columbus-area libraries, schools, and after-school programs. Please feel free to reach out if your organization is interested in hosting WIMS for a program.
+            </p>
+        </div>
     </div>
 
-    <div class="meetings" id="meetings">
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
 
+
+    <div class="meetings" id="meetings">
+        <div class="heading">
+            <h1>MEETINGS...</h1>
+        </div>
+        <div class="meet">
+            <p>
+                WIMS meets several times throughout the autumn and spring semesters.  A typical meeting consists of a more laid-back, social part with announcements and board-run programming at the beginning of the meeting, followed by the presentation, talk, and/or activity of a guest speaker.
+            </p>
+        </div>
+        <div class="zooms">
+            <h1>april upcoming zooms...</h1>
+            <div class="list">
+                <div class="blog-list">
+                    <div class="entry">
+                        <div class="quote-wrapper">
+                            <blockquote class="text"> 
+                                <p>6</p>
+                            </blockquote>
+                        </div>
+                        <div class="blog-name">
+                            <p>PRESENTATION</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>by Systems & Technology Research</p>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="quote-wrapper">
+                            <blockquote class="text"> 
+                                <p>13</p>
+                            </blockquote>
+                        </div>
+                        <div class="blog-name">
+                            <p>RESUME WORKSHOP</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>by Dr. Smith</p>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="quote-wrapper">
+                            <blockquote class="text"> 
+                                <p>20</p>
+                            </blockquote>
+                        </div>
+                        <div class="blog-name">
+                            <p>INTERVIEW WORKSHOP</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>by Emma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="join">
+                <a href="">
+                    <div class="join-button">
+                        JOIN ZOOM LINK!
+                    </div>
+                </a>    
+            </div>
+        </div>
     </div>
 
 </body>
