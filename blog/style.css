@@ -150,3 +150,18 @@ h2 {
   .pics img {
       width: 200px;
   }
+
+  .bye {
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .bye a {
+    text-align: center; 
+    text-decoration: none;
+  }
+
+  .bye a:hover {
+    font-size: 200px;
+    text-decoration: dotted;
+  }

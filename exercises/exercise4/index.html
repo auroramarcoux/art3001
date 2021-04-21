@@ -10,12 +10,7 @@
 </head>
 <body>
     <div id="top"></div>
-    <div class="wims-top">
-        <div class="buttons-left">
-            <a class="button button1" href="#wims-top">HOME</a> 
-            <a class="button button2" href="#about">ABOUT US</a>
-            <a class="button button3" href="#contact">CONTACT US</a>
-        </div>
+    <div class="wims-top" id="wims-top">
         <div class="title">
             <h1>WOMEN IN</h1>
             <h1>MATH &</h1>
@@ -24,102 +19,59 @@
                 at the ohio state university
             </p>
         </div>
-        <div class="buttons-right">
-            <a class="button button1" href="#exec">EXEC BOARD</a> 
-            <a class="button button2" href="#outreach">OUTREACH</a>
-            <a class="button button3" href="#meetings">MEETINGS</a>
-        </div>
     </div>
-    <a class="back-to-top" href="#top">back <br> to <br> top</a>
+    <div class="vertical-nav">
+        <a href="#wims-top">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#outreach">OUTREACH</a>
+        <a href="#meetings">MEETINGS</a>
+        <a href="#exec">EXECUTIVE BOARD</a>
+        <a href="#contact">CONTACT US</a>
+    </div>
     <div class="about" id="about">
         <div class="heading">
-            <h1>ABOUT US...</h1>
+            <h1>About Us</h1>
         </div>
         <div class="box-left">
-            <img src="../../assets/wims.png" alt="wims logo" style="height: 350px; float: right;">
-        </div>
-        <div class="box-right">
-            <p>
-                an active undergraduate student organization for women in STEM.
-            </p>
-            <a class="button button1" href="#contact" style="margin-left: 50%;">join now!</a>
+            <img src="../../assets/wims.png" alt="wims logo" style="height: 280px; display:block;
+            margin:auto;">
         </div>
         <div class="description">
             <p>
                 Established in 2006, the Women in Math and Science Club at The Ohio State University was created to unite women with similar interests, promote academic success and well-being, and establish a supportive personal and professional network.  This organization provides support for undergraduate women in mathematics and the sciences by inviting successful women in STEM to speak, holding social events, and providing outreach to encourage young girls to study science and to demonstrate that there is not a standard type of person who can do science.
             </p>
         </div>
-        <div class="bottom-buttons">
-            <a class="oval" href="">
-                <p>career building</p>
-            </a>
-            <a class="oval" href="">
-                <p style="line-height: 20px; margin-top: 10px;">community outreach</p>
-            </a>
-            <a class="oval" href="">
-                <p>peer mentoring</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="contact" id="contact">
-        <div class="heading">
-            <h1>CONTACT US...</h1>
-        </div>
-        <div class="form-page">
-            <form action="action_page.php" method="get">
-                <div class="first">
-                    <input type="text" id="fname" name="fname" placeholder="FIRST NAME">
+        <div class="buttons-right">
+            <div class="box">
+                <div class="button">career building</div>
+                <div class="overlay">
+                <p>
+                    One of the most beneficial aspects of our organization is the opportunity to start building a professional network.  We invite successful, strong women to our meetings to speak about their work and passion for their field, as well as provide insight as to any obstacles she might have faced and the steps she has taken to reach her career and personal goals.  Additionally, with six positions included on the executive board, WIMS is able to offer great leadership experience opportunities of varying skillsets and time commitments.
+                </p>
                 </div>
-                <div class="last">
-                    <input type="text" id="lname" name="lname" placeholder="LAST NAME">
+            </div>
+            <div class="box">
+                <div class="button">community outreach</div>
+                <div class="overlay">
+                <p>
+                    WIMS partners with the Girl Scouts of Ohio’s Heartland each year to host a “Detective for a Day” event that introduces elementary school girls to STEM and all of the possibilities in those fields.  In addition, WIMS works with local elementary schools, after-school programs, and libraries to host additional STEM-themed events to demonstrate how exciting and interesting math and science can be.
+                </p>
                 </div>
-                <div class="email">
-                    <input type="text" id="email" name="email" placeholder="EMAIL">
+            </div>
+            <div class="box">
+                <div class="button">peer mentoring</div>
+                <div class="overlay">
+                <p>
+                    Our mentoring program pairs upperclassmen with our younger/first-year students of the same major or career interest to make them feel more at home in their first year and pass along tips for studying, scheduling, and other advice that they have learned during their time at Ohio State.
+                </p>
                 </div>
-                <div class="phone">
-                    <input type="text" id="phone" name="phone" placeholder="PHONE">
-                </div>
-                <div class="message">
-                    <input type="text" id="message" name="message" placeholder="MESSAGE">
-                </div>
-                <input type="submit" value="Submit">
-              </form>
-        </div>
-    </div>
-
-    <div class="exec" id="exec">
-        <div class="heading">
-            <h1>EXECUTIVE BOARD...</h1>
-        </div>
-        <div class="hex">
-            <div class="pres-em">
-                <p>president emeritus</p>
-            </div>
-            <div class="publicist">
-                <p>publicist</p>
-            </div>
-            <div class="vice">
-                <p>vice president</p>
-            </div>
-            <div class="liasion">
-                <p>community outreach liasion</p>
-            </div>
-            <div class="sec">
-                <p>secretary</p>
-            </div>
-            <div class="treas">
-                <p>treasurer</p>
-            </div>
-            <div class="president">
-                <p>president</p>
             </div>
         </div>
     </div>
 
     <div class="outreach" id="outreach">
         <div class="heading">
-            <h1>COMMUNITY OUTREACH...</h1>
+            <h1>Community Outreach</h1>
         </div>
         <div class="container">
             <div class="mySlides">
@@ -218,70 +170,164 @@
         }
     </script>
 
-
-    <div class="meetings" id="meetings">
-        <div class="heading">
-            <h1>MEETINGS...</h1>
-        </div>
-        <div class="meet">
-            <p>
-                WIMS meets several times throughout the autumn and spring semesters.  A typical meeting consists of a more laid-back, social part with announcements and board-run programming at the beginning of the meeting, followed by the presentation, talk, and/or activity of a guest speaker.
-            </p>
-        </div>
-        <div class="zooms">
-            <h1>april upcoming zooms...</h1>
-            <div class="list">
-                <div class="blog-list">
-                    <div class="entry">
-                        <div class="quote-wrapper">
-                            <blockquote class="text"> 
-                                <p>6</p>
-                            </blockquote>
-                        </div>
-                        <div class="blog-name">
-                            <p>PRESENTATION</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>by Systems & Technology Research</p>
-                        </div>
+<div class="meetings" id="meetings">
+    <div class="heading">
+        <h1>Meetings</h1>
+    </div>
+    <div class="meet" style="margin-top: 90px;">
+        <p>
+            WIMS meets several times throughout the autumn and spring semesters.  A typical meeting consists of a more laid-back, social part with announcements and board-run programming at the beginning of the meeting, followed by the presentation, talk, and/or activity of a guest speaker.
+        </p>
+    </div>
+    <div class="zooms" style="margin-top: 100px;">
+        <div class="list">
+            <div class="blog-list">
+                <div class="entry">
+                    <div class="quote-wrapper">
+                        <blockquote class="text"> 
+                            <p>6</p>
+                        </blockquote>
                     </div>
-                    <div class="entry">
-                        <div class="quote-wrapper">
-                            <blockquote class="text"> 
-                                <p>13</p>
-                            </blockquote>
-                        </div>
-                        <div class="blog-name">
-                            <p>RESUME WORKSHOP</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>by Dr. Smith</p>
-                        </div>
+                    <div class="blog-name">
+                        <p>PRESENTATION</p>
                     </div>
-                    <div class="entry">
-                        <div class="quote-wrapper">
-                            <blockquote class="text"> 
-                                <p>20</p>
-                            </blockquote>
-                        </div>
-                        <div class="blog-name">
-                            <p>INTERVIEW WORKSHOP</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>by Emma</p>
-                        </div>
+                    <div class="blog-desc">
+                        <p>by Systems & Technology Research</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="quote-wrapper">
+                        <blockquote class="text"> 
+                            <p>13</p>
+                        </blockquote>
+                    </div>
+                    <div class="blog-name">
+                        <p>RESUME WORKSHOP</p>
+                    </div>
+                    <div class="blog-desc">
+                        <p>by Dr. Smith</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="quote-wrapper">
+                        <blockquote class="text"> 
+                            <p>20</p>
+                        </blockquote>
+                    </div>
+                    <div class="blog-name">
+                        <p>INTERVIEW WORKSHOP</p>
+                    </div>
+                    <div class="blog-desc">
+                        <p>by Emma</p>
                     </div>
                 </div>
             </div>
-            <div class="join">
-                <a href="">
-                    <div class="join-button">
-                        JOIN ZOOM LINK!
-                    </div>
-                </a>    
+        </div>
+    </div>
+    <div class="join" style="margin-top: 145px;">
+        <a href="">
+            <div class="join-button">
+                JOIN ZOOM LINK!
+            </div>
+        </a>    
+    </div>
+</div>
+
+    <div class="exec" id="exec">
+        <div class="heading">
+            <h1>Executive Board</h1>
+        </div>
+        <div class="headshots">
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="card">
+                    <img src="../../assets/WPAP.png" alt="wap">
+                </div>
+                <div class="job-title">
+                    <h5>President</h5>
+                    <p>Maddie Leithan</p>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="contact" id="contact">
+        <div class="heading">
+            <h1>CONTACT US...</h1>
+        </div>
+        <div class="form-page">
+            <form action="action_page.php" method="get">
+                <div class="first">
+                    <input type="text" id="fname" name="fname" placeholder="FIRST NAME">
+                </div>
+                <div class="last">
+                    <input type="text" id="lname" name="lname" placeholder="LAST NAME">
+                </div>
+                <div class="email">
+                    <input type="text" id="email" name="email" placeholder="EMAIL">
+                </div>
+                <div class="phone">
+                    <input type="text" id="phone" name="phone" placeholder="PHONE">
+                </div>
+                <div class="message">
+                    <input type="text" id="message" name="message" placeholder="MESSAGE">
+                </div>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+    </div>
 </body>
 </html>
