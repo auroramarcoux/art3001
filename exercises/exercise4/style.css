@@ -343,14 +343,37 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 40px 1fr;
+}
+
+.logo {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.icon h3 {
+  text-align: center;
+  font-size: 17px;
+  font-family: Barlow;
+  color: white;
 }
 
 .form-page {
     grid-row: 2/3;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -498,9 +521,8 @@ input[type="submit" i] {
     justify-content: center;
     align-items: center;
     min-width: 0;
-    width: 150px;
+    width: 170px;
     word-wrap: break-word;
-    background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
@@ -522,12 +544,16 @@ input[type="submit" i] {
 .position img {
     vertical-align: middle;
     border-style: none;
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
 }
 
 .job-title {
   height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 5px;
+  font-family: Barlow;
 }
 
 .publicist {
@@ -921,8 +947,8 @@ img {
   grid-column: 3/4;
   grid-row: 2/3;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items:center;
 }
 
 .join a {
@@ -957,7 +983,6 @@ img {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  opacity: 0.8;
   transition: left 0.3s;
 }
 
@@ -978,9 +1003,23 @@ img {
   color: white;
 }
 
-.vertical-nav a:active {
-  background-color: #5e6472;
+
+
+.footer {
+  background-color:#222222;
+  text-align: center;
   color: white;
+  width: 100%;
+  height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1.5rem;
+}
+
+.footer p {
+  font-family: Barlow;
+  font-size: 13px;
+  margin-left: 17%;
 }
 
 @media only screen and (max-width: 480px) {
